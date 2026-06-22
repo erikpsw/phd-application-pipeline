@@ -18,7 +18,7 @@ Orchestrate a practical PhD outreach workflow:
 7. triage professor replies,
 8. draft replies and update pipeline statuses.
 
-Use a dedicated outreach-writing skill when one is available. Never send email without explicit user approval.
+Use the bundled `phd-outreach-email` skill for individual email wording. Never send email without explicit user approval.
 
 ## Applicant Configuration
 

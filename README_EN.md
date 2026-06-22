@@ -2,7 +2,10 @@
 
 [中文说明](README.md)
 
-An end-to-end PhD outreach workflow for Codex and compatible agent environments. It connects applicant-profile analysis, school and advisor discovery, research-fit verification, Feishu/Lark tracking, Gmail draft creation, and professor-reply triage.
+A PhD outreach toolkit for Codex and compatible agent environments. It includes:
+
+- `phd-application-pipeline` for end-to-end orchestration, advisor discovery, tracking, and reply triage.
+- `phd-outreach-email` for concise, evidence-based supervisor inquiry emails.
 
 ## Features
 
@@ -18,14 +21,19 @@ An end-to-end PhD outreach workflow for Codex and compatible agent environments.
 
 ## Installation
 
-Clone the repository into your Codex skills directory:
+Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/phd-application-pipeline.git \
-  ~/.codex/skills/phd-application-pipeline
+git clone https://github.com/erikpsw/phd-application-pipeline.git
 ```
 
-You may also copy the repository into the skills directory of another compatible agent.
+Install both skills:
+
+```bash
+cp -R phd-application-pipeline ~/.codex/skills/phd-application-pipeline
+cp -R phd-application-pipeline/phd-outreach-email \
+  ~/.codex/skills/phd-outreach-email
+```
 
 ## Example Prompts
 

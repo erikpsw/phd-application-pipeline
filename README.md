@@ -2,7 +2,10 @@
 
 [English](README_EN.md)
 
-一个面向 Codex 与兼容 Agent 环境的博士申请套磁工作流。它把申请人背景分析、院校与导师筛选、研究匹配、飞书进度管理、Gmail 草稿创建和教授回复分类串成一条可恢复、可审计的流水线。
+一个面向 Codex 与兼容 Agent 环境的博士申请套磁工具包。仓库包含两个协同 Skill：
+
+- `phd-application-pipeline`：申请全流程编排、导师筛选、飞书追踪和回复分类。
+- `phd-outreach-email`：基于申请人证据与导师研究生成简洁、具体的套磁邮件。
 
 ## 功能
 
@@ -18,14 +21,24 @@
 
 ## 安装
 
-将仓库克隆到 Codex Skill 目录：
+克隆仓库：
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/phd-application-pipeline.git \
-  ~/.codex/skills/phd-application-pipeline
+git clone https://github.com/erikpsw/phd-application-pipeline.git
 ```
 
-也可以复制仓库目录到其他兼容 Agent 的 skills 目录。
+安装主 Skill：
+
+```bash
+cp -R phd-application-pipeline ~/.codex/skills/phd-application-pipeline
+```
+
+安装套磁邮件 Skill：
+
+```bash
+cp -R phd-application-pipeline/phd-outreach-email \
+  ~/.codex/skills/phd-outreach-email
+```
 
 ## 使用示例
 
@@ -70,6 +83,11 @@ Skill 不包含任何真实个人信息或凭证。使用前请准备：
 ├── README.md
 ├── README_EN.md
 ├── LICENSE
+├── phd-outreach-email/
+│   ├── SKILL.md
+│   ├── agents/openai.yaml
+│   ├── references/style-guide.md
+│   └── scripts/generate_email.py
 ├── agents/
 │   └── openai.yaml
 └── references/

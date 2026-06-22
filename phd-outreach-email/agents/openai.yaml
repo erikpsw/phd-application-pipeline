@@ -1,0 +1,4 @@
+interface:
+  display_name: "博士套磁邮件"
+  short_description: "基于申请人证据与导师研究生成简洁、具体的博士套磁邮件"
+  default_prompt: "Use $phd-outreach-email to draft a concise PhD supervisor inquiry email from my applicant profile and verified advisor research."
