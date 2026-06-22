@@ -1,0 +1,3 @@
+display_name: 博士申请全流程
+short_description: 导师筛选、飞书进度、Gmail 草稿与回复分类的一体化工作流。
+default_prompt: 请根据我的 CV 和申请偏好，管理从导师匹配到飞书与 Gmail 更新的博士申请套磁流程。

@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+*.pdf
+*.docx
+*.xlsx
+*.csv
+data/
+output/
+private/
+credentials/
